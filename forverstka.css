@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 1800px;
+}
+li {
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: #ebeef2;
+    padding: 22px 0;
+}
+.header_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header_container a {
+    color: black;
+    font-size: 16px;
+    margin-right: 63px;
+    padding: 27px 6px;
+}
+.header_container a:hover {
+    background: yellow;
+}
+#menu_checkbox {
+    display: none;
+}
+ul {
+    display: flex;
+}
+nav{
+    margin-top: 20px;
+}
+.top-slide{
+    /* background: url("https://studio.uxpincdn.com/studio/wp-content/uploads/2021/03/Best-Tools-and-Resources-for-Your-Accessible-Design.png") no-repeat; */
+    background: url("https://www.teahub.io/photos/full/126-1264951_josette-duck-egg-wallpaper-laura-ashley-wallpaper-and.jpg") no-repeat;
+    padding-top: 120px;  
+    padding-bottom: 200px;
+}
+.top-slide h2 {
+    background: yellow;
+    display: inline;
+    font-size: 70px;
+    padding: 0 13px;
+}
+.top-slide p {
+    background: #2d2e2e;
+    display: inline;
+    font-size: 24px;
+    padding: 0 13px;
+    color: white;
+}
+.top-slide:nth-child(2) {
+    margin-bottom: 10px;
+}
+.top-container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+.first-p{
+    font-size: 20px;
+    color: white;
+}
+.bottom-card{
+    background: #38393b;
+    position: relative;
+    top: -30px;
+}
+.specialize-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.specialize-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.specialize-container h3 {
+    font-size: 35px;
+}
+.specialize-container p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio h4{
+    color: yellow;
+    font-size: 16px;
+    display: inline-block;
+    background: #424147;
+    padding: 0 8px;
+    margin-bottom: 30px;
+}
+.portfolio p{
+    color: #424146;
+    font-size: 16px;
+}
+.toggles button {
+    border: none;
+    color: #424146;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 20 5px;
+}
+.toggles button:after{
+    content: '/';
+}
+.toggles button:last-child:after{
+    content: none;
+}
+.posts{
+    width: 90%;
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto
+}
+.brand-slider{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.brand-slider h4{
+    margin-top: 40px;
+    color: yellow;
+    font-size: 16px;
+    display: inline-block;
+    background: #424147;
+    padding: 0 8px;
+    margin-bottom: 30px;
+}
+.brand-slider p{
+    color: #424146;
+    font-size: 16px;
+}
+footer{
+    background: #414146;
+    padding: 30px 0;
+    color: white;
+}
+footer h4{
+    font-size: 18px;
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto ;
+    display: grid;
+    grid-template-columns: 40% 30% 20%;
+    grid-column-gap: 3%;
+}
+.about-us a{
+    background: black;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid yellow;
+    display: inline-block;
+}
+.images{
+    margin-top: 10px;
+}
+.Latest-tweets p{
+    margin-top: 20px;
+}
+
+
+
+/*соткамен киргенде сайт нормально киру ушин*/
+@media screen and ( max-width: 420px) {
+    .header_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main_menu{
+        display: none;
+    }
+    .main_menu li {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main_menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: black;
+    }
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+    #menu_checkbox:checked + nav[role="navigation"] .main_menu{
+        display: block;
+    }
+    #menu_checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+    .header_container a {
+        margin-right: -65px;
+    }
+    .main_menu{
+        position: relative;
+        top: 30px;
+        right: 11px;
+    }
+    .top-slide{
+        /* background: url("https://www.teahub.io/photos/full/126-1264951_josette-duck-egg-wallpaper-laura-ashley-wallpaper-and.jpg") no-repeat; */
+        padding-top: 40px;  
+        padding-bottom: 40px;
+    }
+    .top-slide h2 {
+        /* display: inline; */
+        font-size: 32px;
+        /* padding: 0 13px; */
+    }
+    .top-slide p {
+        font-size: 16px;
+    }
+    .specialize-container p {
+        font-size: 16px;
+    }
+    .specialize-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-card{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .posts{
+        width: 90%;
+        display:grid;
+        margin: 0 auto;
+        grid-template-columns: auto ;
+    }
+}
