@@ -49,9 +49,6 @@ nav{
     padding-top: 120px;  
     padding-bottom: 200px;
 }
-
-
-
 .top-slide h2 {
     background: yellow;
     display: inline;
@@ -262,3 +259,4 @@ footer h4{
         grid-template-columns: auto ;
     }
 }
+
